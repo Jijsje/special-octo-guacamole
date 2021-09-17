@@ -1,9 +1,11 @@
+package L7.Banking;
+
 public class Account {
     public int accountNumber;
     private double balance;
     private double interest;
 
-    public Account(int accountNumber){
+    public Account(int accountNumber) {
         BankApp.allAccounts.add(this);
         this.accountNumber = accountNumber;
         this.interest = 0.05;
@@ -12,8 +14,7 @@ public class Account {
     public void withdraw(int amount) {
         if (amount > balance) {
             System.out.println("wat! no munie!");
-        }
-        else {
+        } else {
             this.balance = balance - amount;
         }
     }
@@ -32,6 +33,6 @@ public class Account {
     }
 
     public void applyInterest() {
-        balance = balance + (balance*interest);
+        balance = balance + (balance * interest);
     }
 }

@@ -1,14 +1,23 @@
+package L7.Banking;
+
 import java.util.ArrayList;
 
 public class BankApp {
 
+    private static int accountCounter;
     public static ArrayList<Account> allAccounts = new ArrayList<>();
 
     public static void main (String[] args) {
-        Account a = new Account(111);
-        System.out.println("Balance a: " + a.getBalance());
-        Account b = new Account(222);
-        System.out.println("Balance b: " + b.getBalance());
+
+        accountCounter = 0;
+
+        // /* Tests
+        BankApp bankApp = new BankApp();
+        Account a = bankApp.openAccount();
+        System.out.println("Balance van account 111: " + a.getBalance());
+        Account b = bankApp.openAccount();
+        System.out.println("Balance van account 222: " + b.getBalance());
+
 
         a.deposit(2000);
         System.out.println("Balance a after deposit: " + a.getBalance());
@@ -21,6 +30,16 @@ public class BankApp {
         oneYearPasses();
         System.out.println("Balance a after 1 year: " + a.getBalance());
         System.out.println("Balance b after 1 year: " + b.getBalance());
+        // */
+    }
+
+    public Account openAccount(){
+        return new Account(generateAccountNumber());
+    }
+
+    private int generateAccountNumber(){
+        accountCounter++;
+        return accountCounter;
     }
 
     private static void oneYearPasses() {
