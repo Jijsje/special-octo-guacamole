@@ -7,6 +7,7 @@ import org.mockito.Mockito;
 
 import static org.mockito.Mockito.when;
 
+// GESTOPT MET DEZE OPDRACHT OMDAT HET OP GEEN ZINNIGE MANIER TE TESTEN VALT MET DEZE OPBOUW
 class BankAppTest {
 
 	Account accountA, accountB;
