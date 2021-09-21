@@ -13,7 +13,7 @@ public class Sudoku {
         int[][] sudoku = new int[3][3]; // aanmaken van 2D array
         for (int i = 0; i <= 2; i++) {
             for (int j = 0; j <= 2; j++) {
-                sudoku[i][j] = numbers.get(i*3+j); // creeer index voor numbers met 3-tallig stelsel en vul de sudoku
+                sudoku[i][j] = numbers.get(i * 3 + j); // creeer index voor numbers met 3-tallig stelsel en vul de sudoku
             }
             System.out.println(Arrays.toString(sudoku[i]));
         }

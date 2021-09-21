@@ -1,5 +1,7 @@
 package L7.Person;
 
+import java.util.Objects;
+
 public class Person {
 
     private String name;
@@ -34,6 +36,24 @@ public class Person {
 
     public int getAge() {
         return this.age;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s (%s) is %s", name, age, gender);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return age == person.age && Objects.equals(name, person.name) && gender == person.gender;
+    }
+
+    @Override
+    public int hashCode() {
+        return age * Objects.hash(name) * Objects.hash(gender);
     }
 
     private static class PersonDiedException extends Throwable {
