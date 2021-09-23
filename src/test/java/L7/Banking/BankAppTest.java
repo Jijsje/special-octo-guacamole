@@ -8,6 +8,7 @@ import org.mockito.Mockito;
 import static org.mockito.Mockito.when;
 
 // GESTOPT MET DEZE OPDRACHT OMDAT HET OP GEEN ZINNIGE MANIER TE TESTEN VALT MET DEZE OPBOUW
+// klopt; dan zou je de opbouw van je app moeten verbeteren en daarna kun je wel testen.
 class BankAppTest {
 
 	Account accountA, accountB;

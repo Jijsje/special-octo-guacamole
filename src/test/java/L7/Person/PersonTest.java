@@ -10,6 +10,8 @@ import java.util.Arrays;
 
 class PersonTest {
 
+    // goed bezig
+
     @Test
     void testPersonGender() {
         Person p = new Person("Jan", 45);

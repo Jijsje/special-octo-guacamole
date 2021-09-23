@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Sudoku {
     public static void main(String[] args) {
+        // mooi
         ArrayList<Integer> numbers = new ArrayList<Integer>();
         for (int i = 1; i < 10; i++) { // genereer 9 getallen en zet ze in een arraylist
             numbers.add(i);
