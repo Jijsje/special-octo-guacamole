@@ -2,6 +2,7 @@ package L7.Person;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.mockito.internal.matchers.And;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -58,5 +59,40 @@ class PersonTest {
             System.out.println(method);
             System.out.println("Modifier: " + method.getModifiers());
         }
+    }
+
+    @Test
+    public void testGreet(){
+        Person henk = new Person("Henk", 88);
+        System.out.println(henk.greet());
+        Android andy = new Android();
+        System.out.println(andy.greet());
+        Employee dave = new Employee("Dave", 16);
+        System.out.println(dave.greet());
+        Teacher bram = new Teacher("Bram", 42);
+        System.out.println(bram.greet());
+    }
+
+    @Test
+    public void testCharging() {
+        Android wall_e = new Android();
+        System.out.println(wall_e.greet());
+        wall_e.charge(101);
+        wall_e.charge(100);
+        System.out.println(wall_e.greet());
+    }
+
+    @Test
+    public void testHistory() {
+        Person sjakie = new Person("Sjakie", 21);
+        sjakie.addHistory("Werd een skateboardlegende op 13-jarige leeftijd.");
+        sjakie.addHistory("Leerde zijn veters strikken op 14-jarige leeftijd.");
+        sjakie.printHistory();
+    }
+
+    @Test
+    public void testSubHuman() {
+        Human subHuman = Person.subHuman();
+        System.out.println(subHuman.greet());
     }
 }
