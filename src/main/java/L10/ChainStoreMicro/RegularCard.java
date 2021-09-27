@@ -1,4 +1,4 @@
-package L7.ChainStoreMicro;
+package L10.ChainStoreMicro;
 
 public class RegularCard extends Card{
 
@@ -9,6 +9,7 @@ public class RegularCard extends Card{
     @Override
     boolean pay(int amount) {
         if(amount>credit) {
+            System.out.println("Te weinig money, G");
             return false;
         }
         credit -= amount;
