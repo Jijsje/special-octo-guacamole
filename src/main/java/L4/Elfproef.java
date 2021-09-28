@@ -1,3 +1,5 @@
+package L4;
+
 import java.util.Scanner;
 
 public class Elfproef { // compileert niet
