@@ -1,11 +1,9 @@
 package L10.ChainStoreMicro;
 
-import java.util.Collection;
 import java.util.HashSet;
 
 public class TestChainStoreMicro {
     static HashSet<Card> allCardHolders = new HashSet<>();
-
 
     public static void main(String[] args) {
         RegularCard a = new RegularCard(123456, "Bob", 9000);
