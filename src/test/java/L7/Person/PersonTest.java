@@ -11,6 +11,8 @@ import java.util.Arrays;
 
 class PersonTest {
 
+    // goed bezig
+
     @Test
     void testPersonGender() {
         Person p = new Person("Jan", 45);
@@ -60,6 +62,9 @@ class PersonTest {
             System.out.println("Modifier: " + method.getModifiers());
         }
     }
+// <<<<<<< code-review
+// }
+// =======
 
     @Test
     public void testGreet(){
@@ -96,3 +101,4 @@ class PersonTest {
         System.out.println(subHuman.greet());
     }
 }
+// >>>>>>> main

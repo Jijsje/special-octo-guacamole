@@ -11,6 +11,7 @@ public class Hourglass {
     }
 
     public void createHourglass() {
+        // mooie poging. het werkt maar het is onleesbaar. dit soort code zou je normaal gesproken refactoren.
         Scanner in = new Scanner(System.in);
         System.out.println("Enter number");
 
