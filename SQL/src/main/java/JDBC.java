@@ -9,13 +9,13 @@ public class JDBC {
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery("SELECT * FROM authors");
 
-        resultSet.
+        while(resultSet.next()){
+            String firstName = resultSet.getString("AU_FNAME");
+            System.out.println(firstName);
+        }
 
-        System.out.println("hallo");
         } catch (SQLException e) {
             System.out.println("error");
-        } finally{
-            System.out.println("Fin");
         }
     }
 }
