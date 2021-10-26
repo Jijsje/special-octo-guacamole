@@ -1,4 +1,4 @@
-// package Huppeldepup;
+package L2;// package Huppeldepup;
 
 import java.util.Scanner;
 import static java.lang.Math.abs;

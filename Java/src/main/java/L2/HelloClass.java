@@ -1,4 +1,4 @@
-package Hup;
+package L2;
 
 public class HelloClass {
 

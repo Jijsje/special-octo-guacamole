@@ -1,4 +1,4 @@
-package nl.Huppeldepup;
+package L4;
 
 import java.util.Scanner;
 
